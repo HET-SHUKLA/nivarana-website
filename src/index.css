@@ -344,7 +344,174 @@ section {
 }
 
 
+/* Contact Section */
+.contact-section {
+  background-color: var(--dark);
+  padding: 4rem 1rem;
+  text-align: center;
+}
 
+.contact-header {
+  margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: var(--pink);
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  padding: 2rem;
+  border-radius: 12px;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: var(--blue);
+}
+
+
+/* About Section */
+.about-section {
+  background-color: var(--dark);
+  padding: 4rem 1rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: var(--pink);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: left;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-card {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 250px;
+  max-width: 280px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.team-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.team-card a {
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.team-card a:hover {
+  color: var(--blue);
+}
 
 
 /* Footer */
@@ -508,6 +675,57 @@ section {
     display: none; 
   }
 
+
+  /* Contact Section for mobile */
+  .contact-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    min-width: 80%;
+    max-width: 90%;
+  }
+
+  /* About Section for mobile */
+   .about-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    min-width: 80%;
+    max-width: 90%;
+  }
 
   /* Footer for mobile */
   .footer {
