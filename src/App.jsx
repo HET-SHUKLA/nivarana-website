@@ -1,33 +1,26 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  createRoutesFromElements,
-} from 'react-router-dom'
-import './App.css'
-import Layout from './pages/Layout'
+
+import Header from './components/Header'
+import Footer from './components/Footer'
 import Home from './pages/Home'
-import Feedback from './pages/Feedback'
-import RequestService from './pages/RequestService'
-import Contacts from './pages/Contact'
+import About from './pages/About'
+import Services from './pages/Services'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
+import './index.css'
 
 function App() {
-
-  const routes = createRoutesFromElements(
-    <Route>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/feedback" element={<Feedback />} />
-        <Route path="/request-service" element={<RequestService />} />
-        <Route path="/contacts" element={<Contacts />} />
-      </Route>
-    </Route>
-  )
-  const router = createBrowserRouter(routes)
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <>
+      <Header />
+      <main>
+        <section id="home"><Home /></section>
+        <section id="services"><Services /></section>
+        <section id="portfolio"><Portfolio /></section>
+        <section id="contact"><Contact /></section>
+        <section id="about"><About /></section>
+      </main>
+      <Footer />
+    </>
   )
 }
 
