@@ -23,19 +23,9 @@ html, body {
   box-sizing: border-box;
 }
 
-/* section {
-  width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  padding: 4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow-x: hidden;
-  box-sizing: border-box;
-} */
+section {
+  padding: 2rem 1rem;
+}
 
 
 /* Header */
@@ -430,9 +420,9 @@ html, body {
 @media (max-width: 768px) {
 
   /* Section for mobile */
-  /* section {
-    padding: 3rem 1rem; 
-  } */
+  section {
+    padding: 5.3rem 0.1rem; 
+  }
 
 
   /* Header for mobile */
